@@ -18,7 +18,7 @@ export default () => {
       </div>
 
       <div className="font-mono">
-      I am a senior student from Zhejiang University, China. My research focuses on cryo-EM/ET, especially its computational side. I have a keen interest in the interdisciplinary nexus of physics, chemistry, biology, and computer science, and I strive to learn, explore and conduct research at this intersection.
+      I am a senior student from Zhejiang University, China. My research focuses on cryo-EM/ET, especially its computational side. I am interested in exploring the interdisciplinary interface between physics, chemistry, biology, and computer science, and I strive to learn and conduct research at this intersection.
       </div>
 
       <div className="flex self-stretch justify-end">

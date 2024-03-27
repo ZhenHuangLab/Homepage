@@ -14,7 +14,7 @@ const DevelopedBy = () => {
         </a>
         &nbsp;&&nbsp;
         <a
-          href="https://github.com/flamrdevs/astrolinkt/tree/main"
+          href="https://astro.build/themes/details/astrolinkt/"
           className="inline-block transition duration-300 hover:-translate-y-px outline-none hover:text-primary-10 focus-visible:text-primary-10"
           target="_blank"
           aria-label="Developer"
