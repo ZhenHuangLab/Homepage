@@ -31,7 +31,7 @@ const stacks = [
     name: "Class Notes",
     category: "ZJU Notes in Notion",
     icon: Simple.IconNotion,
-    url: "https://zhenh.notion.site/f21d69aaa7214868b465490a9bc6eee2?v=052dafd18fdb46ba8e5cc04bee0b99e6",
+    url: "https://notion.zhenhuang.site",
   },
   {
     name: "Uptime Status",
