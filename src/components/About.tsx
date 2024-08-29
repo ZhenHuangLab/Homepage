@@ -11,14 +11,14 @@ export default () => {
         </Avatar>
 
         <div className="flex flex-col items-start gap-2">
-          <h1 className="font-mono text-lg lg:text-xl">Undergrad, Zhejiang Univ</h1>
+          <h1 className="font-mono text-lg lg:text-xl">PhD student, Tsinghua Univ</h1>
           <h2 className="font-medium text-2xl lg:text-3xl">
             <span className="gradient-text">黄振</span> Zhen Huang</h2>
         </div>
       </div>
 
       <div className="font-mono">
-      I am a senior student from Zhejiang University, China. My research focuses on cryo-EM/ET, especially its computational side. I am interested in exploring the interdisciplinary interface between physics, chemistry, biology, and computer science, and I strive to learn and conduct research at this intersection.
+      I am a PhD student from Tsinghua University, China. My research focuses on cryo-EM/ET, especially its computational side. I am interested in exploring the interdisciplinary interface between physics, chemistry, biology, and computer science, and I strive to learn and conduct research at this intersection.
       </div>
 
       <div className="flex self-stretch justify-end">

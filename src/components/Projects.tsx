@@ -9,7 +9,7 @@ const projects = [
     title: "MemXTerminator",
     description: "A software for membrane analysis and subtraction in cryo-EM.",
     icon: Simple.IconCode,
-    url: "https://zhenhuanglab.github.io/MemXTerminator/",
+    url: "https://memxterminator.github.io/wiki/",
   },
   {
     title: "Computer Vision Project",
