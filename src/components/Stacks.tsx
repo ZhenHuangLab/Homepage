@@ -29,7 +29,7 @@ const stacks = [
   },
   {
     name: "Class Notes",
-    category: "ZJU Notes in Notion",
+    category: "Notes in Notion",
     icon: Simple.IconNotion,
     url: "https://notion.zhenhuang.site",
   },
