@@ -13,6 +13,11 @@ const socials = [
     icon: Simple.IconMail,
   },
   {
+    href: "https://linux.do/u/zhenhuang/summary",
+    name: "LINUX DO",
+    icon: Simple.IconLinuxDo,
+  },
+  {
     href: "https://space.bilibili.com/37168500",
     name: "Bilibili",
     icon: Simple.IconBilibili,

@@ -107,3 +107,24 @@ export const IconDNA = create(
 export const IconMicroscope = create(
   "M7.5,1.5C7.5,0.7,8.2,0,9,0h1.5C11.3,0,12,0.7,12,1.5c0.8,0,1.5,0.7,1.5,1.5v10.5c0,0.8-0.7,1.5-1.5,1.5c0,0.8-0.7,1.5-1.5,1.5H9c-0.8,0-1.5-0.7-1.5-1.5C6.7,15,6,14.3,6,13.5V3C6,2.2,6.7,1.5,7.5,1.5z M1.5,21H15c3.3,0,6-2.7,6-6s-2.7-6-6-6V6c5,0,9,4,9,9c0,2.3-0.9,4.4-2.3,6h0.8c0.8,0,1.5,0.7,1.5,1.5S23.3,24,22.5,24H15H1.5C0.7,24,0,23.3,0,22.5S0.7,21,1.5,21z M5.2,18h9c0.4,0,0.8,0.3,0.8,0.8s-0.3,0.8-0.8,0.8h-9c-0.4,0-0.8-0.3-0.8-0.8S4.8,18,5.2,18z"
 )
+
+export const IconLinuxDo = forwardRef<SVGSVGElement, IconProps>(({ size = 16, width = size, height = size, ...props }, ref) => (
+  <svg
+    ref={ref}
+    fill="currentColor"
+    {...props}
+    width={width}
+    height={height}
+    role="img"
+    viewBox="0 0 200 200"
+  >
+    <defs>
+      <mask id="linuxdo-mask">
+        <circle cx="100" cy="100" r="99" fill="white" />
+        <circle cx="100" cy="100" r="95" fill="black" />
+        <rect x="0" y="70" width="200" height="60" fill="white" />
+      </mask>
+    </defs>
+    <circle cx="100" cy="100" r="99" fill="currentColor" mask="url(#linuxdo-mask)" />
+  </svg>
+));
