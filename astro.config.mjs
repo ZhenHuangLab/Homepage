@@ -12,5 +12,5 @@ export default defineConfig({
     }),
     react(),
   ],
-  site: 'https://zhenhuang.site',
+  site: 'https://zhenhuang.top',
 });

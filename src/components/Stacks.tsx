@@ -7,37 +7,37 @@ const stacks = [
     name: "Homepage",
     category: "This page!",
     icon: Simple.IconHomepage,
-    url: "https://zhenhuang.site",
+    url: "https://zhenhuang.top",
   },
   {
     name: "Blog",
     category: "Personal Blog",
     icon: Simple.IconBlog,
-    url: "https://blog.zhenhuang.site",
+    url: "https://blog.zhenhuang.top",
   },
   {
     name: "Webslides",
     category: "Public WebSlides",
     icon: Simple.IconWebslides,
-    url: "https://webslides.zhenhuang.site",
+    url: "https://webslides.zhenhuang.top",
   },
   {
     name: "Kirastar",
     category: "天文摄影笔记",
     icon: Simple.IconKirastar,
-    url: "https://kirastar.zhenhuang.site",
+    url: "https://kirastar.zhenhuang.top",
   },
   {
     name: "Class Notes",
     category: "Notes in Notion",
     icon: Simple.IconNotion,
-    url: "https://notion.zhenhuang.site",
+    url: "https://notion.zhenhuang.top",
   },
   {
     name: "Uptime Status",
     category: "Website Uptime Status page",
     icon: Simple.IconStatus,
-    url: "https://status.zhenhuang.site",
+    url: "https://status.zhenhuang.top",
   },
 ];
 

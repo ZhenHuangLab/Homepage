@@ -27,7 +27,7 @@ const projects = [
     title: "Astrophotography Gallery",
     description: "A selection of images taken by me.",
     icon: Simple.IconKirastar,
-    url: "https://blog.zhenhuang.site/astrogallery/",
+    url: "https://blog.zhenhuang.top/astrogallery/",
   },
 ];
 
