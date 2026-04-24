@@ -38,7 +38,7 @@ export default () => {
   return (
     <div>
       <h2 className="font-medium text-xl mb-3">Socials</h2>
-      <ul className="flex items-center justify-center gap-3 p-1">
+      <ul className="grid grid-cols-3 justify-items-center gap-3 p-1 sm:grid-cols-6">
         {socials.map((social) => {
           return (
             <li key={social.name}>

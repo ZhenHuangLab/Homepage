@@ -1,8 +1,10 @@
 const DevelopedBy = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="mb-8 font-mono text-neutral-10 text-xs text-center">
       <span>
-      &copy; 2025 · Built with{" "}
+        &copy; {currentYear} · Built with{" "}
         <a
           href="https://astro.build/"
           className="inline-block transition duration-300 hover:-translate-y-px outline-none hover:text-primary-10 focus-visible:text-primary-10"
