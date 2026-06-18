@@ -23,6 +23,12 @@ const socials = [
     icon: Simple.IconBilibili,
   },
   {
+    href: "https://www.xiaohongshu.com/user/profile/6475fc6f000000002a035be2",
+    name: "Xiaohongshu",
+    icon: Simple.IconXiaohongshu,
+    iconClassName: "h-[29px] w-[43px] lg:h-8 lg:w-[50px]",
+  },
+  {
     href: "https://twitter.com/ZhenVictorHuang",
     name: "X",
     icon: Simple.IconX,
@@ -38,7 +44,7 @@ export default () => {
   return (
     <div>
       <h2 className="font-medium text-xl mb-3">Socials</h2>
-      <ul className="grid grid-cols-3 justify-items-center gap-3 p-1 sm:grid-cols-6">
+      <ul className="mx-auto flex max-w-[224px] flex-wrap justify-center gap-3 p-1 sm:max-w-none sm:gap-2">
         {socials.map((social) => {
           return (
             <li key={social.name}>
@@ -52,9 +58,14 @@ export default () => {
                   "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-7 focus-visible:ring-offset-neutral-1"
                 )}
                 target="_blank"
-                aria-label="Open"
+                aria-label={`Open ${social.name}`}
               >
-                <social.icon className="transition size-1/3 text-neutral-10 group-hover:text-neutral-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110" />
+                <social.icon
+                  className={cn(
+                    "transition text-neutral-10 group-hover:text-neutral-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110",
+                    social.iconClassName ?? "size-1/3"
+                  )}
+                />
               </a>
             </li>
           );
