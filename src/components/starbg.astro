@@ -54,6 +54,7 @@
   
     const stars = Array.from({ length: COUNT }, () => new Star(0, 0, 0));
     let rafId = 0;
+    let initialized = false;
   
     const canvas = document.querySelector(
       "#starfield-canvas",
@@ -68,22 +69,37 @@
   
     function setup() {
       invariant(ctx, "canvas context should not be null");
-      rafId > 0 && cancelAnimationFrame(rafId);
-  
+
       const { clientWidth: width, clientHeight: height } = container;
       const dpr = window.devicePixelRatio || 1;
+
+      // 尺寸没变时（如移动端地址栏抖动触发的回调）直接跳过，避免画布被清空重来
+      if (
+        initialized &&
+        canvas.width === width * dpr &&
+        canvas.height === height * dpr
+      ) {
+        return;
+      }
+
+      rafId > 0 && cancelAnimationFrame(rafId);
+
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
       ctx.scale(dpr, dpr);
-  
-      for (const star of stars) {
-        star.x = Math.random() * width - width / 2;
-        star.y = Math.random() * height - height / 2;
-        star.z = 0;
+
+      // 只在首次随机撒星；之后 resize 保留现有星星，越界的会在 update() 中自动回收
+      if (!initialized) {
+        for (const star of stars) {
+          star.x = Math.random() * width - width / 2;
+          star.y = Math.random() * height - height / 2;
+          star.z = 0;
+        }
+        initialized = true;
       }
-  
+
       ctx.translate(width / 2, height / 2);
       ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
       ctx.strokeStyle = "white";

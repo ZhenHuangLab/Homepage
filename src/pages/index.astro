@@ -38,8 +38,11 @@ import DevelopedBy from "~/components/DevelopedBy.tsx";
     position: fixed; /* 或 absolute，取决于你的具体需求 */
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100vw;
+    /* 用 lvh（大视口高度）固定高度：移动端地址栏收起/展开不会改变它，
+       避免容器 resize 导致星空重置闪烁 */
+    height: 100vh;
+    height: 100lvh;
     z-index: -1; /* 确保它在其他内容之后 */
   }
   /* boxes pattern */
